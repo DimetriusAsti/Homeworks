@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int n, multy = 0;
+	cin >> n;
+	int sum = 0;
+	for (int i = 1; i <= n; ++i) {
+		multy = i;
+		for (int j = 1; j <= i; ++j) {
+			multy *= i + j;
+		}
+		sum += multy;
+	}
+	cout << sum;
+	return 0;
+}
